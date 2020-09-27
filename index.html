@@ -7,48 +7,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="conteúdo">
     <form>
         <h1>Cadastro de Usuário</h1>
-        <label for="nome">Nome Completo:</label>
+        <label for="nome">Nome Completo</label>
         <input type="text" placeholder="" id="nome" name="nome" required>
-        <label for="email">Email:</label>
+        <label for="email">Email</label>
         <input type="text" name="email" id="email" required>
-        <label for="telefone">Telefone (opcional):</label>
+        <label for="telefone">Telefone (opcional)</label>
         <input type="number" name="telefone" id="telefone">
-
         <fieldset>  
             <legend>Endereço</legend>
-            <label for="logradouro">Logradouro:</label>
+            <label for="logradouro">Logradouro</label>
             <input type="text" name="logradouro" id="logradouro">
-            <label for="número">Número:</label>
+            <label for="número">Número</label>
             <input type="number" name="número" id="número">
-            <label for="bairro">Bairro:</label>
+            <label for="bairro">Bairro</label>
             <input type="text" name="bairro" id="bairro">
-            <label for="cidade_estado">Cidade e Estado:</label>
+            <label for="cidade_estado">Cidade e Estado</label>
             <input type="text" name="cidade_estado" id="cidade_estado">
-            <label for="CEP">CEP:</label>
+            <label for="CEP">CEP</label>
             <input type="number" name="CEP" id="CEP">
         </fieldset>
-        <label for="estado_civil">Estado Civil:</label>
-        <select name="estado_civil" id="estado_civil">
-            <option>Solteiro (a)</option>
-            <option>Casado (a)</option>
-            <option>Divorciado (a)</option>
-            <option>Viúvo (a)</option>
-            <option>Separado (a)</option>
-        </select>
-        <fieldset>
+        <div id="estado_civil">
+            <label for="estado_civil">Estado Civil</label>
+            <select name="estado_civil" id="estado_civil">
+                <option>Solteiro (a)</option>
+                <option>Casado (a)</option>
+                <option>Divorciado (a)</option>
+                <option>Viúvo (a)</option>
+                <option>Separado (a)</option>
+            </select>
+        </div>
+        <fieldset id="contato">
             <legend>Preferência de Contato</legend>
-            <input type="radio" name="contato" id="contato_email">
-            <label for="contato_email">E-mail</label>
-            <input type="radio" name="contato" id="contato_telefone">
-            <label for="contato_telefone">Telefone</label>
+            <div>
+                <input type="radio" name="contato" id="contato_email">
+                <label for="contato_email" class="margem_esquerda">E-mail</label>
+            </div>  
+            <div>
+                <input type="radio" name="contato" id="contato_telefone">
+                <label for="contato_telefone" class="margem_esquerda">Telefone</label>
+            </div>
         </fieldset>
-        <label for="concordo">Li e concordo com os termos</label>
+        <div id="concordo">
+            <input type="checkbox" name="concordo" id="concordo">
+            <label for="concordo" class="margem_esquerda">Li e concordo com os termos</label>
+        </div>
         <button type="reset">Reiniciar</button>
         <button type="submit">Enviar</button>
     </form>
-    </div>
 </body>
 </html>

@@ -1,13 +1,73 @@
 body {
     margin: 0;
+    height: 100vh;
+    background-color: aqua;
 }
 
 form {
     display: flex;
     flex-flow: column;
-    margin: 1% 5%;
+    margin: 5% 5%;
+    background-color: aquamarine;
+    border-radius: 20px;
+    padding: 5%;
 }
 
 form > h1 {
     text-align: center;
+}
+
+input {
+    width: 100%; 
+    margin-bottom: 5%;
+}
+
+fieldset {
+    display: flex;
+}
+
+div#estado_civil {
+    margin: 5% 0;
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+}
+
+select {
+    margin-left: 2%;
+    width: 70%;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin: 0;
+    width: min-content;
+}
+
+div {
+    display: flex;
+    align-items: center;
+}
+
+div#concordo {
+    margin: 4% 0;
+}
+
+label.margem_esquerda {
+    margin-left: 2%;
+}
+
+button {
+    margin: 2% 0;
+}
+
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        flex-flow: column;
+    }
+
+    input {
+        width: 50%;
+        margin-bottom: 2%;
+    }
 }
