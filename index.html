@@ -20,15 +20,15 @@
         <fieldset id="endereco">  
             <legend>Endereço</legend>
             <label for="logradouro">Logradouro</label>
-            <input type="text" name="logradouro" id="logradouro">
+            <input type="text" name="logradouro" id="logradouro" required>
             <label for="número">Número</label>
-            <input type="number" name="número" id="número">
+            <input type="number" name="número" id="número" required>
             <label for="bairro">Bairro</label>
-            <input type="text" name="bairro" id="bairro">
+            <input type="text" name="bairro" id="bairro" required>
             <label for="cidade_estado">Cidade e Estado</label>
-            <input type="text" name="cidade_estado" id="cidade_estado">
+            <input type="text" name="cidade_estado" id="cidade_estado" required>
             <label for="CEP">CEP</label>
-            <input type="number" name="CEP" id="CEP">
+            <input type="number" name="CEP" id="CEP" required>
         </fieldset>
         <div id="estado_civil">
             <label for="estado_civil">Estado Civil</label>
@@ -43,7 +43,7 @@
         <fieldset id="contato">
             <legend>Preferência de Contato</legend>
             <div>
-                <input type="radio" name="contato" id="contato_email">
+                <input type="radio" name="contato" id="contato_email" required>
                 <label for="contato_email" class="margem_esquerda">E-mail</label>
             </div>  
             <div>
@@ -52,7 +52,7 @@
             </div>
         </fieldset>
         <div id="concordo">
-            <input type="checkbox" name="concordo" id="concordo">
+            <input type="checkbox" name="concordo" id="concordo" required>
             <label for="concordo" class="margem_esquerda">Li e concordo com os termos</label>
         </div>
         <div id="button">
