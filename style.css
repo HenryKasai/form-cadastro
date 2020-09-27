@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    margin: 1% 5%;
+}
+
+form > h1 {
+    text-align: center;
+}

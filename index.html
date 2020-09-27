@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="conteúdo">
+    <form>
+        <h1>Cadastro de Usuário</h1>
+        <label for="nome">Nome Completo:</label>
+        <input type="text" placeholder="" id="nome" name="nome" required>
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" required>
+        <label for="telefone">Telefone (opcional):</label>
+        <input type="number" name="telefone" id="telefone">
+
+        <fieldset>  
+            <legend>Endereço</legend>
+            <label for="logradouro">Logradouro:</label>
+            <input type="text" name="logradouro" id="logradouro">
+            <label for="número">Número:</label>
+            <input type="number" name="número" id="número">
+            <label for="bairro">Bairro:</label>
+            <input type="text" name="bairro" id="bairro">
+            <label for="cidade_estado">Cidade e Estado:</label>
+            <input type="text" name="cidade_estado" id="cidade_estado">
+            <label for="CEP">CEP:</label>
+            <input type="number" name="CEP" id="CEP">
+        </fieldset>
+        <label for="estado_civil">Estado Civil:</label>
+        <select name="estado_civil" id="estado_civil">
+            <option>Solteiro (a)</option>
+            <option>Casado (a)</option>
+            <option>Divorciado (a)</option>
+            <option>Viúvo (a)</option>
+            <option>Separado (a)</option>
+        </select>
+        <fieldset>
+            <legend>Preferência de Contato</legend>
+            <input type="radio" name="contato" id="contato_email">
+            <label for="contato_email">E-mail</label>
+            <input type="radio" name="contato" id="contato_telefone">
+            <label for="contato_telefone">Telefone</label>
+        </fieldset>
+        <label for="concordo">Li e concordo com os termos</label>
+        <button type="reset">Reiniciar</button>
+        <button type="submit">Enviar</button>
+    </form>
+    </div>
+</body>
+</html>
