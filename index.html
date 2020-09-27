@@ -9,13 +9,15 @@
 <body>
     <form>
         <h1>Cadastro de Usuário</h1>
-        <label for="nome">Nome Completo</label>
-        <input type="text" placeholder="" id="nome" name="nome" required>
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email" required>
-        <label for="telefone">Telefone (opcional)</label>
-        <input type="number" name="telefone" id="telefone">
-        <fieldset>  
+        <div id="contato">
+            <label for="nome">Nome Completo</label>
+            <input type="text" placeholder="" id="nome" name="nome" required>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" required>
+            <label for="telefone">Telefone (opcional)</label>
+            <input type="number" name="telefone" id="telefone">
+        </div>
+        <fieldset id="endereco">  
             <legend>Endereço</legend>
             <label for="logradouro">Logradouro</label>
             <input type="text" name="logradouro" id="logradouro">
@@ -53,8 +55,10 @@
             <input type="checkbox" name="concordo" id="concordo">
             <label for="concordo" class="margem_esquerda">Li e concordo com os termos</label>
         </div>
-        <button type="reset">Reiniciar</button>
-        <button type="submit">Enviar</button>
+        <div id="button">
+            <button type="reset">Reiniciar</button>
+            <button type="submit">Enviar</button>
+        </div>
     </form>
 </body>
 </html>

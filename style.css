@@ -17,13 +17,18 @@ form > h1 {
     text-align: center;
 }
 
-input {
-    width: 100%; 
-    margin-bottom: 5%;
+div#contato {
+    display: flex;
+    flex-flow: column;
 }
 
 fieldset {
-    display: flex;
+    padding-right: 7%;
+}
+
+input {
+    width: 100%; 
+    margin-bottom: 5%;
 }
 
 div#estado_civil {
@@ -57,17 +62,72 @@ label.margem_esquerda {
 }
 
 button {
-    margin: 2% 0;
+    margin: 2% 2%;
+    width: 30%;
+    text-align: center;
+}
+
+div#button {
+    justify-content: space-around;
 }
 
 @media (min-width: 768px) {
-    body {
-        display: flex;
-        flex-flow: column;
+    div#contato {
+        position: relative;
+        right: 25%;
+        margin-top: 4%;
+    }
+
+    label {
+        width: 40%;
     }
 
     input {
-        width: 50%;
+        width: 40%;
         margin-bottom: 2%;
+    }
+
+    fieldset {
+        display: flex;
+        width: 32%;
+    }
+
+    fieldset#endereco {
+        position: absolute;
+        left: 50%;
+        top: 37%;
+    }
+
+    div#estado_civil {
+        flex-flow: column;
+        margin: 0 0 2% 0;
+        position: relative;
+        left: 4.6%;
+    }
+
+    select {
+        margin-left: 0;
+        width: 40.8%;
+    }
+
+    fieldset#contato {
+        position: relative;
+        left: 4.5%;
+    }
+
+    div#concordo {
+        position: relative;
+        left: 4.6%;
+        margin: 2% 0 0 0;
+    }
+
+    div#button {
+        justify-content: flex-start;
+    }
+    
+    button {
+        width: 15%;
+        margin-left: 5.5%;
+        margin-top: 2%;
     }
 }
